@@ -26,6 +26,7 @@ class Busser::RunnerPlugin::Minitest < Busser::RunnerPlugin::Base
 
   postinstall do
     install_gem("minitest", "< 5.0")
+    install_gem("minitest-chef-handler")
     install_gem("bundler")
   end
 
